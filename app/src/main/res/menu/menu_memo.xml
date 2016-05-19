@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_restore"
+        android:icon="@drawable/ic_restore_white"
+        android:title="@string/menu_restore"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_edit"
+        android:icon="@drawable/ic_create_white"
+        android:title="@string/menu_edit"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_trash"
+        android:icon="@drawable/ic_trash_white"
+        android:title="@string/menu_trash"
+        app:showAsAction="ifRoom" />
+</menu>

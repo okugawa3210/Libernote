@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing">
+
+        <TextView
+            android:id="@+id/memo_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_view_back_with_border"
+            android:padding="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/label_memo_expired_on"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/memo_expired_on"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/label_memo_priority"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/memo_priority"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/label_memo_tag"
+                android:gravity="center_vertical"/>
+
+            <com.okugawa3210.libernote.view.FlowLayout
+                android:id="@+id/tag_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

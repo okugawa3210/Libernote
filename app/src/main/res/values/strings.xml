@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Libernote</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="menu_create">Create</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_tag">Tag</string>
+    <string name="menu_trash">Trash</string>
+    <string name="menu_save">Save</string>
+    <string name="menu_about">About</string>
+    <string name="menu_sort">Sort</string>
+    <string name="menu_empty_trash">Empty</string>
+    <string name="menu_add">Add</string>
+    <string name="message_splash">Thanks for download Libernote</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_add_tag">Add Tag</string>
+    <string name="btn_add">Add</string>
+
+    <string name="date_picker_dialog_today">Today</string>
+    <string name="date_picker_dialog_clear">Clear</string>
+
+    <string name="label_memo_priority">Priority</string>
+    <string name="label_memo_priority_none">None</string>
+    <string name="label_memo_priority_high">High</string>
+    <string name="label_memo_priority_lower">Lower</string>
+    <string name="label_memo_expired_on">Expired On</string>
+    <string name="label_memo_title">Title</string>
+    <string name="label_memo_note">Note</string>
+    <string name="label_memo_tag">Tag</string>
+    <string name="label_advanced_settings_open">Open Advanced Settings</string>
+    <string name="label_advanced_settings_close">Close Advanced Settings</string>
+
+    <string name="message_required">This field can\'t be blank</string>
+    <string name="message_too_short">This field is too short (minimum is "%1$d" characters)</string>
+    <string name="message_too_long">This field is too long (maximum is "%1$d" characters)</string>
+    <string name="message_invalid_length">This field is invalid length (minimum is "%1$d" characters, maximum is "%2$d" characters)</string>
+    <string name="message_tag_duplicated">This tag was already registered</string>
+
+    <string name="message_confirm_delete">Are you sure you want to delete ?</string>
+    <string name="message_confirm_register">Are you sure you want to register ?</string>
+    <string name="message_confirm_restore">Are you sure you want to restore ?</string>
+    <string name="message_confirm_empty_trash">Are you sure you want to empty trash ?</string>
+
+    <string name="default_confirm_title">Confirm</string>
+    <string name="default_confirm_positive_text">Yes</string>
+    <string name="default_confirm_negative_text">No</string>
+    <string name="message_list_empty">There is no data</string>
+    <string name="message_empty_text">None</string>
+    <string name="message_not_exist_memo">Memo is not exist</string>
+    <string name="submenu_sort_update_on">UpdateOn</string>
+    <string name="submenu_sort_priority">Priority</string>
+    <string name="submenu_sort_expired_on">ExpiredOn</string>
+    <string name="tab_title_text_search">Text Search</string>
+    <string name="tab_title_tag_search">Tag Search</string>
+    <string name="about_item_app">About app</string>
+    <string name="about_item_license">License</string>
+    <string name="about_item_version">Version</string>
+    <string name="about_item_contact">Contact</string>
+    <string name="about_content_app">This app is simple notepad app with search and tagging feature.</string>
+    <string name="about_content_license">Copyright 2016 okugawa3210\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="about_sub_item_using_libraries">Using Libraries</string>
+    <string name="about_sub_item_using_icons">Using Icons</string>
+    <string name="menu_restore">Restore</string>
+</resources>

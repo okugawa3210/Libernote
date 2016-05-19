@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/side_menu_group_main">
+        <item
+            android:id="@+id/side_menu_search"
+            android:icon="@drawable/ic_search_black"
+            android:title="@string/menu_search" />
+        <item
+            android:id="@+id/side_menu_create"
+            android:icon="@drawable/ic_create_black"
+            android:title="@string/menu_create" />
+        <item
+            android:id="@+id/side_menu_tag"
+            android:icon="@drawable/ic_tag_black"
+            android:title="@string/menu_tag" />
+        <item
+            android:id="@+id/side_menu_trash"
+            android:icon="@drawable/ic_trash_black"
+            android:title="@string/menu_trash" />
+    </group>
+    <group
+        android:id="@+id/side_menu_group_other">
+        <item
+            android:id="@+id/side_menu_about"
+            android:title="@string/menu_about" />
+    </group>
+</menu>

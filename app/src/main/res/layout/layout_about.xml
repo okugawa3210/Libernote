@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_item_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_item_back"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_expand_more"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing"
+            android:text="@string/about_item_app" />
+
+        <LinearLayout
+            android:id="@+id/about_content_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_content_app" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/about_item_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_item_back"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_expand_more"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing"
+            android:text="@string/about_item_license" />
+
+        <LinearLayout
+            android:id="@+id/about_content_license"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_view_back_with_border"
+                android:padding="4dp"
+                android:text="@string/about_content_license"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/about_sub_item_using_libraries"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="Android-Orma"
+                android:textAppearance="?android:textAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://github.com/gfx/Android-Orma"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="Dagger2"
+                android:textAppearance="?android:textAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://github.com/google/dagger"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="RxAndroid"
+                android:textAppearance="?android:textAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://github.com/ReactiveX/RxAndroid"
+                android:textAppearance="?android:textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="@string/about_sub_item_using_icons"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing"
+                android:text="Material design icons"
+                android:textAppearance="?android:textAppearance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://github.com/google/material-design-icons"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_item_back"
+            android:paddingBottom="@dimen/spacing"
+            android:paddingEnd="@dimen/spacing"
+            android:paddingStart="40dp"
+            android:paddingTop="@dimen/spacing">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:text="@string/about_item_version" />
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="?colorControlHighlight" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/about_item_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/about_item_back"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_expand_more"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing"
+            android:text="@string/about_item_contact" />
+
+        <LinearLayout
+            android:id="@+id/about_content_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="GitHub" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:autoLink="web"
+                    android:text="https://github.com/okugawa3210" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Twitter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:autoLink="web"
+                    android:text="https://twitter.com/okugawa3210" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

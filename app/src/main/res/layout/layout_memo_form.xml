@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/form_memo_footer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing">
+
+            <requestFocus />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_memo_note" />
+
+            <EditText
+                android:id="@+id/text_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:labelFor="@+id/text_note"
+                android:maxLines="20"
+                android:minLines="5" />
+
+            <TextView
+                android:id="@+id/open_advanced_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_add_circle_outline"
+                android:text="@string/label_advanced_settings_open" />
+
+            <TextView
+                android:id="@+id/close_advanced_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_remove_circle_outline"
+                android:text="@string/label_advanced_settings_close"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/form_memo_advance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/spacing"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_memo_title" />
+
+                    <EditText
+                        android:id="@+id/text_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:inputType="text"
+                        android:labelFor="@+id/text_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_memo_expired_on" />
+
+                    <EditText
+                        android:id="@+id/text_expired_on"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:inputType="date"
+                        android:labelFor="@+id/text_expired_on" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_memo_priority" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_priority"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/memo_priority_none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/label_memo_priority_none"
+                            android:textColor="?colorControlNormal" />
+
+                        <RadioButton
+                            android:id="@+id/memo_priority_high"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_memo_priority_high"
+                            android:textColor="?colorControlNormal" />
+
+                        <RadioButton
+                            android:id="@+id/memo_priority_lower"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_memo_priority_lower"
+                            android:textColor="?colorControlNormal" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_memo_tag" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btn_add_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_add_box"
+                            android:gravity="center|end"
+                            android:text="@string/btn_add_tag"
+                            android:textColor="?colorControlNormal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <com.okugawa3210.libernote.view.FlowLayout
+                            android:id="@+id/tag_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="start|top">
+
+                        </com.okugawa3210.libernote.view.FlowLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/form_memo_footer"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_primary"
+        android:baselineAligned="false"
+        android:fitsSystemWindows="true"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="6dp"
+            android:background="@color/color_accent"
+            android:drawableStart="@drawable/ic_save_white"
+            android:gravity="center|end"
+            android:padding="@dimen/btn_padding"
+            android:text="@string/btn_save"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
